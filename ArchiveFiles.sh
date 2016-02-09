@@ -13,6 +13,6 @@ find ${TARGET_DIR} -iregex ".*\.log$" > ${OUTPUT_DIR}/file.list
 tar -zcf ${OUTPUT} -T ${TARGET_DIR}/file.list
 
 # リストファイルを削除
-# rm -rf ${OUTPUT_DIR}/file.list
+rm -rf ${OUTPUT_DIR}/file.list
 
 exit 0
